@@ -1,0 +1,24 @@
+
+.batman-login{
+    animation: fadein 2s ease-in-out 0s  normal;
+}
+@keyframes fadein{
+    0%{transform: translateX(-600px);}
+    100%{transform: translateX(0);}
+}
+.hulk-login{
+    animation: fadeinRight 2s ease-in-out 0s  normal;
+}
+@keyframes fadeinRight{
+    0%{transform: translateX(600px);}
+    100%{transform: translateX(0);}
+}
+
+.button-login{
+    animation: visibility 3s ease-in-out 0s  normal;
+}
+@keyframes visibility{
+    0%{opacity: 0;}
+    50%{opacity: 0.3;}
+    100%{opacity: 1;}
+}
