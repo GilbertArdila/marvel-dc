@@ -2,6 +2,7 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 html{
-    background-color: rgba(0, 0, 0, 0.822);
+    background: rgb(203,45,60);
+background: linear-gradient(0deg, rgba(203,45,60,1) 4%, rgba(4,118,242,1) 98%)
 }
 
