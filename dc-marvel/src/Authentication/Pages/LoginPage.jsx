@@ -17,8 +17,8 @@ const LoginPage = () => {
           <h1 className='text-black text-lg p-3'>MARVEL VS DC</h1>
         </div>
 
-        <div className='batman-login w-full  h-[700px] col-start-1 col-end-2 row-start-2 row-end-3 bg-[url("../../../src/assets/batman.png")] bg-center bg-no-repeat bg-contain 
-        ' />
+        <div className={`batman-login w-full  h-[700px] col-start-1 col-end-2 row-start-2 row-end-3 bg-[url(../../../src/assets/batman.png)] bg-center bg-no-repeat bg-contain`} 
+         />
 
         <div className='flex justify-center w-full max-w-sm h-screen col-start-2 col-end-3 row-start-2 row-end-3'>
 

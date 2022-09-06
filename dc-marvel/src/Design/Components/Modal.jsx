@@ -8,7 +8,7 @@ const Modal = ({image1,image2,image3,name}) => {
 
    
     return (
-        <div className='modal flex justify-center absolute w-full h-3/4 bg-black  z-10'>
+        <div className='modal flex justify-center absolute w-full h-3/4 mt-[10%] bg-black md:mt-[10%] z-10'>
             <div className="modal_container gid  relative bg-black  w-full h-full "
            >
                 <div className="modal_content_slider w-full h-full ">

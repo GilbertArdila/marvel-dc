@@ -4,7 +4,7 @@ import {Link} from "react-router-dom"
  const Card = ({imagen,nombre,id,descripcion}) => {
   
   return (
-    <div className='w-[250px] h-auto mx-2 my-1 justify-self-center cursor-pointer border-2 border-blue-600  hover:border-solid hover:border-2 hover:border-yellow-300 '
+    <div className='w-[250px] h-auto mx-2 my-1 justify-self-center  border-2 border-blue-600  hover:border-solid hover:border-2 hover:border-yellow-300 '
    >
     <div className=' flex flex-col items-center w-full  h-auto text-white'
      >
