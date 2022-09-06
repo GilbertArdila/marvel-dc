@@ -14,7 +14,7 @@ const LoginPage = () => {
     <>
       <div className='grid grid-cols-3 grid-rows-[(200px,_1fr)] w-screen h-screen'>
         <div className='col-start-1 col-end-4 row-start-1 row-end-2 w-full h-16 flex justify-center items-center'>
-          <h1 className='text-red-600 p-3'>MARVEL VS DC</h1>
+          <h1 className='text-black text-lg p-3'>MARVEL VS DC</h1>
         </div>
 
         <div className='batman-login w-full  h-[700px] col-start-1 col-end-2 row-start-2 row-end-3 bg-[url("../../../src/assets/batman.png")] bg-center bg-no-repeat bg-contain 
