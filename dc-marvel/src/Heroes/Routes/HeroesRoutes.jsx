@@ -10,7 +10,8 @@ const HeroesRoutes = () => {
        <Routes>
         <Route path='marvel' element={<MarvelPage />}/>
         <Route path='dc' element={<DcPage />}/>
-        <Route path='heroe' element={<HeroePage />}/>
+        {/* heroe/:heroId declaramos este parámetro en el path */}
+        <Route path='heroe/:heroId' element={<HeroePage />}/>
         <Route path='/inicio' element={<InicioPage/>}/>
         <Route path='/*' element={<Navigate to="/login" />}/>
       </Routes>
