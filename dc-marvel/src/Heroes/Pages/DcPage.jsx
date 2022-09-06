@@ -1,36 +1,43 @@
 import React from 'react'
 import { useEffect } from 'react'
-import {Card} from '../../Design/Components'
+import { heroAPI } from '../../Api/HeroesAPI';
+import { Card } from '../../Design/Components'
 
 const DcPage = () => {
-  const [api, setApi] = React.useState([])
+  const [getHeroes, setGetHeroes] = React.useState([]);
 
   useEffect(() => {
-    API()
+    obtenerHeroes()
 
   }, [])
 
-  const API = async () => {
-    const response = await fetch('https://fakeapiheroes.herokuapp.com/superheroes')
-    const data = await response.json()
-    setApi(data)
+  const obtenerHeroes = async () => {
+    try {
+      const response = await heroAPI.get("/superheroes?tipo=heroes-dc");
+      setGetHeroes(response.data)
+
+    } catch (error) {
+      console.log(error)
+    }
 
   }
 
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center  bg-black w-screen h-screen '>
-      {api.map((heroe) => (
-        <Card
-         key={heroe.nombre}
-         imagen={heroe.imagen}
-         nombre={heroe.nombre}
-        />
-       
+    <>
+      <h3 className='text-center text-white text-lg my-5'>Heroes DC Comics</h3>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center  bg-black w-screen h-screen '>
+        {getHeroes.map((heroe) => (
+          <Card
+           key={heroe.id}
+            id={heroe.id}
+            imagen={heroe.imagen}
+            nombre={heroe.nombre}
+          />
+        ))}
 
+      </div>
+    </>
 
-      ))}
-
-    </div>
   )
 }
 
