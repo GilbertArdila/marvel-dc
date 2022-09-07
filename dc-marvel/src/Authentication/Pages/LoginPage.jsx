@@ -38,8 +38,8 @@ const [load, setLoad] = React.useState(true)
           <h1 className='text-black text-lg p-3'>MARVEL VS DC</h1>
         </div>
 
-        <div className={`batman-login w-full  h-[700px] col-start-1 col-end-2 row-start-2 row-end-3 bg-[url(../../../src/assets/batman.png)] bg-center bg-no-repeat bg-contain`}
-        />
+        <div className={`batman-login w-full  h-[700px] col-start-1 col-end-2 row-start-2 row-end-3  bg-center bg-no-repeat bg-contain`}
+        ><img src='../../../src/assets/batman.png' alt='Batman'/></div>
 
         <div className='flex justify-center w-full max-w-sm h-screen col-start-2 col-end-3 row-start-2 row-end-3'>
 
@@ -50,7 +50,7 @@ const [load, setLoad] = React.useState(true)
         </div>
 
 
-        <div className='hulk-login col-start-3 col-end-4 row-start-2 row-end-3 w-full h-[800px]  bg-[url("../../../src/assets/hulk.png")] bg-center bg-no-repeat bg-contain' />
+        <div className='hulk-login col-start-3 col-end-4 row-start-2 row-end-3 w-full h-[800px] bg-center bg-no-repeat bg-contain'><img src='../../../src/assets/hulk.png' alt='Hulk'/></div>
 
 
 
