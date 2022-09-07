@@ -37,13 +37,8 @@ const HeroePage = () => {
   const onBack=()=>{
     navigate(-1)
   }
-  if(!getHeroes.length){
-    return (
-      <div className=' w-screen h-screen flex justify-center items-center bg-black'>
-        <Loader/>
-      </div>
-    )
-   }
+ 
+   
   return (
     <div className={`w-screnn  grid grid-rows-[500px_minmax(500px,_1fr)_100px] `}
 
