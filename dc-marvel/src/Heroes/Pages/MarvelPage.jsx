@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect } from 'react';
 import { heroAPI } from '../../Api/HeroesAPI'
 import { Card } from '../../Design/Components';
-
+import {Loader} from '../Components/Loader'
 
 const MarvelPage = () => {
 
@@ -23,7 +23,13 @@ const MarvelPage = () => {
       console.log(error)
     }
   }
-
+     if(!getHeroes.length){
+      return (
+        <div className=' w-screen h-screen flex justify-center items-center bg-black'>
+          <Loader/>
+        </div>
+      )
+     }
   return (
     <>
       <h3 className='my-5 text-center text-white text-xl font-bold'>Heroes <span className='text-red-500'>Marvel</span> </h3>

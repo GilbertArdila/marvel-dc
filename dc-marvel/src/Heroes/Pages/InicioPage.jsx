@@ -16,7 +16,7 @@ const InicioPage = () => {
       replace: true
     })
   }
-
+  
   return (
 
     <div className='w-sceen h-screen grid-rows-[(50px,_1fr)]'>
