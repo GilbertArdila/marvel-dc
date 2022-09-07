@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom'
 import './index.css'
 import { Loader } from '../../Heroes/Components/Loader'
 import { useEffect } from 'react'
+import hulk from '../../assets/hulk.png'
+import batman from '../../assets/batman.png'
 
 
 const LoginPage = () => {
@@ -39,7 +41,7 @@ const [load, setLoad] = React.useState(true)
         </div>
 
         <div className={`batman-login w-full  h-[700px] col-start-1 col-end-2 row-start-2 row-end-3  bg-center bg-no-repeat bg-contain`}
-        ><img src='../../../src/assets/batman.png' alt='Batman'/></div>
+        ><img src={batman}alt='Batman'/></div>
 
         <div className='flex justify-center w-full max-w-sm h-screen col-start-2 col-end-3 row-start-2 row-end-3'>
 
@@ -50,7 +52,7 @@ const [load, setLoad] = React.useState(true)
         </div>
 
 
-        <div className='hulk-login col-start-3 col-end-4 row-start-2 row-end-3 w-full h-[800px] bg-center bg-no-repeat bg-contain'><img src='../../../src/assets/hulk.png' alt='Hulk'/></div>
+        <div className='hulk-login col-start-3 col-end-4 row-start-2 row-end-3 w-full h-[800px] bg-center bg-no-repeat bg-contain'><img src={hulk} alt='Hulk'/></div>
 
 
 

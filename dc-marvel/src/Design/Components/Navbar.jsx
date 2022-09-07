@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link,NavLink,useNavigate} from "react-router-dom"
+import logo from '../../assets/marvedc.jpg'
 
 const Navbar = () => {
     const navigate=useNavigate()
@@ -16,7 +17,7 @@ const Navbar = () => {
         <div id='nav-heroes-container' className='w-1/2 h-auto'>
             <ul className='nav-heroes-container__ul flex  p-2  '>
                 <Link to={"/"}>
-                    <div className='w-14 h-14 rounded-full  bg-center bg-no-repeat bg-contain border-solid border-2 border-white opacity-40 hover:opacity-100'><img src='../../../src/assets/marvedc.jpg' alt='Logo'/></div>
+                    <div className='w-14 h-14 rounded-full  bg-center bg-no-repeat bg-contain border-solid border-2 border-white opacity-40 hover:opacity-100'><img src={logo} alt='Logo'/></div>
                 </Link>
 
                <NavLink to="/marvel" className={({isActive})=>`w-auto h-12 mx-2 px-1 py-2 border-solid rounded-md bg-gray-700 border-2 text-white hover:bg-yellow-300 hover:text-black ${isActive? "bg-yellow-500 text-black":""}`}>Marvel</NavLink> 
