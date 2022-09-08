@@ -58,7 +58,7 @@ const HeroePage = () => {
           e.currentTarget.innerText==='Cerrar'?e.currentTarget.innerText='Más imagenes':e.currentTarget.innerText='Cerrar'
           setModal(prevState => !prevState)
         }}
-      >Más imagenes</span>
+      >Más imágenes</span>
      
         <img className='w-[250px] h-[350px] place-self-center   md:w-[350px] md:h-[450px]' src={getHeroes.imagen} alt={getHeroes.nombre} />
         <div className='flex flex-col bg-black w-3/4 mx-auto h-auto mt-3 text-left text-2xl text-white px-2 border-2 border-blue-700 border-solid'>

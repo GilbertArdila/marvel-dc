@@ -32,7 +32,7 @@ const MarvelPage = () => {
      }
   return (
     <>
-      <h3 className='my-5 text-center text-white text-xl font-bold'>Heroes <span className='text-red-500'>Marvel</span> </h3>
+      <h3 className='my-5 text-center text-white text-xl font-bold'>Héroes <span className='text-red-500'>Marvel</span> </h3>
 
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center  bg-black w-screen h-screen '>
         {getHeroes.map((heroe) => (
